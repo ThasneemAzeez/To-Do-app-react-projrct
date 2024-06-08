@@ -1211,39 +1211,41 @@ const ViewAll = () => {
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div className="row g-3">
-
-                            {
-                                data.map(
-                                    (value, index) => {
-                                        return <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">user id</th>
-                                                        <th scope="col">id</th>
-                                                        <th scope="col">Title</th>
-                                                        <th scope="col">Completed</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">{value.userId}</th>
-                                                        <td>{value.id}</td>
-                                                        <td>{value.title}</td>
-                                                        <td>{value.completed</td>
-                                                    </tr>
+                            <table class="table">
 
 
-                                                </tbody>
-                                            </table></div>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">userid</th>
+                                        <th scope="col">id</th>
+                                        <th scope="col">title</th>
+                                        <th scope="col">completed</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    {
+                                        data.map(
+                                            (value, index) => {
+                                                return <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+
+
+
+
+                                            }
+                                        )
                                     }
-                        )
-                        
+                                </tbody>
+                            </table>
+                            <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                            </div>
                         </div>
-                            }
-
-
-
                     </div>
                 </div>
             </div>
